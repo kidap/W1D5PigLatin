@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A79CA9911C934B9500965018 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A79CA9901C934B9500965018 /* main.m */; };
 		A79CA99C1C934C6500965018 /* NSString+PigMe.m in Sources */ = {isa = PBXBuildFile; fileRef = A79CA99B1C934C6500965018 /* NSString+PigMe.m */; };
+		A79CA9A51C9375AA00965018 /* InputCollector.m in Sources */ = {isa = PBXBuildFile; fileRef = A79CA9A31C9375AA00965018 /* InputCollector.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		A79CA9901C934B9500965018 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A79CA99A1C934C6500965018 /* NSString+PigMe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+PigMe.h"; sourceTree = "<group>"; };
 		A79CA99B1C934C6500965018 /* NSString+PigMe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+PigMe.m"; sourceTree = "<group>"; };
+		A79CA9A31C9375AA00965018 /* InputCollector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputCollector.m; sourceTree = "<group>"; };
+		A79CA9A41C9375AA00965018 /* InputCollector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputCollector.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,8 @@
 				A79CA9901C934B9500965018 /* main.m */,
 				A79CA99A1C934C6500965018 /* NSString+PigMe.h */,
 				A79CA99B1C934C6500965018 /* NSString+PigMe.m */,
+				A79CA9A31C9375AA00965018 /* InputCollector.m */,
+				A79CA9A41C9375AA00965018 /* InputCollector.h */,
 			);
 			path = W1D5PigLatin;
 			sourceTree = "<group>";
@@ -123,6 +128,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A79CA9A51C9375AA00965018 /* InputCollector.m in Sources */,
 				A79CA99C1C934C6500965018 /* NSString+PigMe.m in Sources */,
 				A79CA9911C934B9500965018 /* main.m in Sources */,
 			);

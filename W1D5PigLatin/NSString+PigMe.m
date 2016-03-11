@@ -12,25 +12,28 @@
 
 
 -(NSString *) stringByPigLatinization{
-//do logic
-  
-  NSString *finalString = @""
-  ;
+  NSString *finalString = @"";
   NSString *tmpString = @"";
   
   NSArray *words = [self componentsSeparatedByString:@" "];
-
-  for (NSString *word in words){
-    tmpString = [word substringToIndex:[word length]];
-    tmpString = [tmpString stringByAppendingString:[word substringToIndex:1]];
-    tmpString = [NSString stringWithString:[tmpString substringWithRange:NSMakeRange(1, [word length])]];
-    tmpString = [NSString stringWithFormat:@"%@%@ ",tmpString,@"ay"];
-    
-    finalString = [tmpString stringByAppendingString:tmpString];
-    tmpString = @"";
-  }
-  return finalString;
   
+  for (NSString *word in words){
+    tmpString = word;
+    
+    //Check if the first character is a consonant
+    if ([tmpString rangeOfCharacterFromSet:[NSCharacterSet characterSetWithCharactersInString:@"aeiuoAEIUO"]].location == 1){
+      tmpString = [tmpString stringByAppendingString:[word substringToIndex:1]];
+      tmpString = [NSString stringWithString:[tmpString substringWithRange:NSMakeRange(1, [word length])]];
+      tmpString = [NSString stringWithFormat:@"%@%@",tmpString,@"ay"];
+    } else{
+      tmpString = word;
+    }
+    
+    //Append string
+    finalString = [finalString stringByAppendingString:[NSString stringWithFormat:@"%@ ",tmpString]];
+  }
+  
+  return finalString;
 }
 
 @end

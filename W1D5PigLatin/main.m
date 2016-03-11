@@ -8,15 +8,19 @@
 
 #import <Foundation/Foundation.h>
 #import "NSString+PigMe.h"
+#import "InputCollector.h"
 
 int main(int argc, const char * argv[]) {
   @autoreleasepool {
 
     NSString *tmpString = [[NSString alloc] init];
+    InputCollector *inputHandler = [InputCollector new];
     
-    tmpString = @"Pig pig pig";
+    //Input string
+    tmpString = [ inputHandler inputForPrompt:@"Enter a string:"];
     
-    NSLog([tmpString stringByPigLatinization]);
+    //PiggyFy
+    NSLog(@"Pig Latin: %@",[tmpString stringByPigLatinization]);
     
   }
     return 0;
